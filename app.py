@@ -658,7 +658,7 @@ def show_overview_page(data):
     with col1:
         st.markdown("<div class='metric-card'><h3>Delivery Time</h3><p class='value'>8-10 Weeks</p></div>", unsafe_allow_html=True)
     with col2:
-        st.markdown("<div class='metric-card'><h3>Methodology</h3><p class='value'>WGCNA + BN</p></div>", unsafe_allow_html=True)
+        st.markdown("<div class='metric-card'><h3>Methodology</h3><p class='value'>WGCNA + Bayesian</p></div>", unsafe_allow_html=True)
     with col3:
         st.markdown("<div class='metric-card'><h3>Data Assets</h3><p class='value'>GOSTAR + GoBiom</p></div>", unsafe_allow_html=True)
     with col4:
