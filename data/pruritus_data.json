@@ -1,0 +1,154 @@
+{
+  "disease": {
+    "name": "Atopic Dermatitis / Pruritus",
+    "therapeutic_area": "Dermatology",
+    "description": "Chronic inflammatory skin condition characterised by intense itching and recurrent eczematous lesions",
+    "unmet_need": "Current treatments provide inadequate itch relief; need for novel therapeutic targets beyond IL-4/IL-13 axis"
+  },
+  "analysis_metadata": {
+    "dataset_source": "GEO: GSE32924 - Atopic Dermatitis vs Healthy Skin",
+    "total_genes_analysed": 25000,
+    "modules_identified": 12,
+    "disease_relevant_module": "Module 5",
+    "genes_in_module": 1120,
+    "top_genes_selected": 25,
+    "hub_genes_identified": 4,
+    "analysis_duration_weeks": 10
+  },
+  "module_genes": [
+    {"gene": "JAK1", "connections": 22, "kme": 0.94, "is_hub": true, "category": "JAK/STAT Signalling"},
+    {"gene": "IL4R", "connections": 13, "kme": 0.89, "is_hub": true, "category": "Cytokine Receptor"},
+    {"gene": "IL13", "connections": 11, "kme": 0.87, "is_hub": true, "category": "Cytokine"},
+    {"gene": "IL22", "connections": 10, "kme": 0.85, "is_hub": true, "category": "Cytokine"},
+    {"gene": "NTRK1", "connections": 6, "kme": 0.78, "is_hub": false, "category": "Receptor Tyrosine Kinase"},
+    {"gene": "IL13RA1", "connections": 4, "kme": 0.72, "is_hub": false, "category": "Cytokine Receptor"},
+    {"gene": "IL4", "connections": 4, "kme": 0.71, "is_hub": false, "category": "Cytokine"},
+    {"gene": "STAT3", "connections": 4, "kme": 0.70, "is_hub": false, "category": "Transcription Factor"},
+    {"gene": "STAT6", "connections": 4, "kme": 0.69, "is_hub": false, "category": "Transcription Factor"},
+    {"gene": "CBL", "connections": 3, "kme": 0.65, "is_hub": false, "category": "Ubiquitin Ligase"},
+    {"gene": "GRB2", "connections": 3, "kme": 0.64, "is_hub": false, "category": "Adaptor Protein"},
+    {"gene": "IL22RA1", "connections": 3, "kme": 0.63, "is_hub": false, "category": "Cytokine Receptor"},
+    {"gene": "JAK2", "connections": 3, "kme": 0.62, "is_hub": false, "category": "JAK/STAT Signalling"},
+    {"gene": "JAK3", "connections": 3, "kme": 0.61, "is_hub": false, "category": "JAK/STAT Signalling"},
+    {"gene": "SHC1", "connections": 3, "kme": 0.60, "is_hub": false, "category": "Adaptor Protein"},
+    {"gene": "STAT1", "connections": 3, "kme": 0.59, "is_hub": false, "category": "Transcription Factor"},
+    {"gene": "STAT5A", "connections": 3, "kme": 0.58, "is_hub": false, "category": "Transcription Factor"},
+    {"gene": "STAT5B", "connections": 3, "kme": 0.57, "is_hub": false, "category": "Transcription Factor"},
+    {"gene": "EGFR", "connections": 2, "kme": 0.52, "is_hub": false, "category": "Receptor Tyrosine Kinase"},
+    {"gene": "SOS1", "connections": 2, "kme": 0.51, "is_hub": false, "category": "GEF"},
+    {"gene": "IGF1R", "connections": 1, "kme": 0.45, "is_hub": false, "category": "Receptor Tyrosine Kinase"},
+    {"gene": "INSR", "connections": 1, "kme": 0.44, "is_hub": false, "category": "Receptor Tyrosine Kinase"},
+    {"gene": "NGF", "connections": 1, "kme": 0.43, "is_hub": false, "category": "Growth Factor"},
+    {"gene": "PIAS1", "connections": 1, "kme": 0.42, "is_hub": false, "category": "SUMO Ligase"},
+    {"gene": "SRC", "connections": 1, "kme": 0.41, "is_hub": false, "category": "Tyrosine Kinase"}
+  ],
+  "network_edges": [
+    {"source": "JAK1", "target": "IL4R"},
+    {"source": "JAK1", "target": "IL13"},
+    {"source": "JAK1", "target": "IL22"},
+    {"source": "JAK1", "target": "STAT3"},
+    {"source": "JAK1", "target": "STAT6"},
+    {"source": "JAK1", "target": "STAT1"},
+    {"source": "JAK1", "target": "STAT5A"},
+    {"source": "JAK1", "target": "STAT5B"},
+    {"source": "JAK1", "target": "JAK2"},
+    {"source": "JAK1", "target": "JAK3"},
+    {"source": "JAK1", "target": "NTRK1"},
+    {"source": "IL4R", "target": "IL13"},
+    {"source": "IL4R", "target": "IL4"},
+    {"source": "IL4R", "target": "IL13RA1"},
+    {"source": "IL4R", "target": "STAT6"},
+    {"source": "IL4R", "target": "JAK3"},
+    {"source": "IL13", "target": "IL13RA1"},
+    {"source": "IL13", "target": "STAT6"},
+    {"source": "IL13", "target": "STAT3"},
+    {"source": "IL22", "target": "IL22RA1"},
+    {"source": "IL22", "target": "STAT3"},
+    {"source": "IL22", "target": "JAK1"},
+    {"source": "NTRK1", "target": "NGF"},
+    {"source": "NTRK1", "target": "SHC1"},
+    {"source": "NTRK1", "target": "GRB2"},
+    {"source": "GRB2", "target": "SOS1"},
+    {"source": "GRB2", "target": "SHC1"},
+    {"source": "EGFR", "target": "GRB2"},
+    {"source": "EGFR", "target": "SRC"},
+    {"source": "CBL", "target": "EGFR"},
+    {"source": "CBL", "target": "GRB2"},
+    {"source": "IGF1R", "target": "SHC1"},
+    {"source": "INSR", "target": "SHC1"},
+    {"source": "STAT3", "target": "PIAS1"},
+    {"source": "JAK2", "target": "STAT5A"},
+    {"source": "JAK2", "target": "STAT5B"},
+    {"source": "JAK3", "target": "STAT5A"}
+  ],
+  "clinical_validation": [
+    {"gene": "IL4R", "drug": "Dupilumab", "phase": "Approved", "indication": "Atopic Dermatitis", "company": "Regeneron/Sanofi"},
+    {"gene": "JAK1", "drug": "Upadacitinib", "phase": "Approved", "indication": "Atopic Dermatitis", "company": "AbbVie"},
+    {"gene": "JAK1", "drug": "Abrocitinib", "phase": "Approved", "indication": "Atopic Dermatitis", "company": "Pfizer"},
+    {"gene": "JAK1", "drug": "Tofacitinib", "phase": "Phase III", "indication": "Atopic Dermatitis", "company": "Pfizer"},
+    {"gene": "JAK2", "drug": "Baricitinib", "phase": "Approved", "indication": "Atopic Dermatitis", "company": "Eli Lilly"},
+    {"gene": "JAK2", "drug": "Ruxolitinib", "phase": "Approved", "indication": "Atopic Dermatitis (topical)", "company": "Incyte"},
+    {"gene": "IL13", "drug": "Lebrikizumab", "phase": "Approved", "indication": "Atopic Dermatitis", "company": "Eli Lilly"},
+    {"gene": "IL13", "drug": "Tralokinumab", "phase": "Approved", "indication": "Atopic Dermatitis", "company": "LEO Pharma"},
+    {"gene": "IL22", "drug": "Fezakinumab", "phase": "Phase II", "indication": "Atopic Dermatitis", "company": "Pfizer"},
+    {"gene": "NTRK1", "drug": "CT327", "phase": "Phase II", "indication": "Pruritus", "company": "Creabilis"},
+    {"gene": "IL22RA1", "drug": "LEO124249", "phase": "Phase I", "indication": "Atopic Dermatitis", "company": "LEO Pharma"},
+    {"gene": "JAK3", "drug": "ATI-502", "phase": "Phase II", "indication": "Atopic Dermatitis", "company": "Aclaris"}
+  ],
+  "novel_targets": [
+    {"gene": "STAT3", "novelty_score": 0.85, "druggability": "Medium", "rationale": "Central hub in IL-22 signalling; transcription factor - historically challenging but emerging approaches"},
+    {"gene": "STAT6", "novelty_score": 0.82, "druggability": "Medium", "rationale": "Key mediator of IL-4/IL-13 signalling; potential for more selective intervention than JAK inhibition"},
+    {"gene": "GRB2", "novelty_score": 0.78, "druggability": "Low-Medium", "rationale": "Adaptor protein linking multiple RTK pathways; SH2 domain targetable"}
+  ],
+  "workflow_steps": [
+    {
+      "step": 1,
+      "name": "Data Acquisition & QC",
+      "description": "Obtain disease-relevant transcriptomic data from GEO/ArrayExpress or client proprietary sources",
+      "metrics": {"samples": 64, "genes_initial": 54675, "genes_after_qc": 25000},
+      "duration_days": 5
+    },
+    {
+      "step": 2,
+      "name": "WGCNA Module Identification",
+      "description": "Weighted Gene Co-expression Network Analysis to identify co-regulated gene modules",
+      "metrics": {"modules_identified": 12, "min_module_size": 30, "merge_cut_height": 0.25},
+      "duration_days": 10
+    },
+    {
+      "step": 3,
+      "name": "Module-Trait Correlation",
+      "description": "Correlate modules with disease phenotype to identify disease-relevant modules",
+      "metrics": {"significant_modules": 3, "top_module": "Module 5", "correlation": 0.78, "p_value": 2.3e-8},
+      "duration_days": 5
+    },
+    {
+      "step": 4,
+      "name": "Hub Gene Identification",
+      "description": "Identify highly connected genes within disease-relevant modules using kME and connectivity",
+      "metrics": {"genes_in_module": 1120, "top_genes_selected": 25, "hub_genes": 4},
+      "duration_days": 7
+    },
+    {
+      "step": 5,
+      "name": "Bayesian Network Construction",
+      "description": "Build causal network to understand regulatory relationships between hub genes",
+      "metrics": {"nodes": 25, "edges": 37, "key_regulators": 4},
+      "duration_days": 10
+    },
+    {
+      "step": 6,
+      "name": "Knock-Out Simulation",
+      "description": "Simulate target knock-out to assess downstream effects and identify optimal intervention points",
+      "metrics": {"simulations_run": 25, "significant_impact_genes": 8},
+      "duration_days": 7
+    },
+    {
+      "step": 7,
+      "name": "Clinical Validation & Prioritisation",
+      "description": "Cross-reference with clinical evidence, druggability, and safety to prioritise targets",
+      "metrics": {"validated_targets": 4, "novel_targets": 3, "total_prioritised": 7},
+      "duration_days": 6
+    }
+  ]
+}
