@@ -631,7 +631,7 @@ def main():
         
         st.markdown("---")
         st.markdown("**Demo Settings**")
-        st.selectbox("Disease Area", ["Atopic Dermatitis / Pruritus", "Alzheimer's Disease (Coming Soon)"], index=0, label_visibility="collapsed")
+        st.selectbox("Disease Area", ["Atopic Dermatitis", "Coming Soon: Alzheimer's Disease"], index=0, label_visibility="collapsed")
         
         st.markdown("---")
         st.caption("Demo Version 1.0")
